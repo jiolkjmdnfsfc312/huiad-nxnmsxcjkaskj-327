@@ -2,7 +2,7 @@
 var element = document.getElementById("Whatsapp");
 var parent = element.parentNode;
 var link = document.createElement('a');
-link.href = 'https://wa.me/?text=Balok Ninja FunGames : https://fungames.vercel.app/Pages-Games/Balok-Ninja/';
+link.href = 'https://wa.me/?text=IDLE ARKS: SAIL AND BUILD FunGames : https://fungames.vercel.app/m/Download-Aplikasi/';
 link.appendChild(element.cloneNode(true));
 parent.replaceChild(link, element);
 // share wa
@@ -11,7 +11,7 @@ parent.replaceChild(link, element);
 var element = document.getElementById("Telegram");
 var parent = element.parentNode;
 var link = document.createElement('a');
-link.href = 'https://telegram.me/share/url?text=Balok Ninja FunGames FunGames : Image&url=https://fungames.vercel.app/Pages-Games/Balok-Ninja/';
+link.href = 'https://telegram.me/share/url?text=IDLE ARKS: SAIL AND BUILD FunGames : Image&url=https://fungames.vercel.app/m/Download-Aplikasi/';
 link.appendChild(element.cloneNode(true));
 parent.replaceChild(link, element);
 // share telegram
