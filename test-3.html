@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<style>
+    div {
+            height:100%;
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+    .fluidMedia {
+
+    padding-bottom: auto; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    height: 0;
+    overflow: hidden;
+}
+
+.fluidMedia iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+</head>
+
+<body>
+    <div class="fluidMedia">
+        <iframe src="https://html5.gamedistribution.com/0c92b681c7ce4e2cb3711071ac635721/" frameborder="0"> </iframe>
+    </div>
+
+    <script>
+        const div = document.querySelector('div');
+        
+        window.addEventListener('deviceorientation',function(){
+            var angle = window.orientation ;
+            switch(angle){
+                case 0 : div.innerHTML="PORTRAIT";
+                break;
+                case 90 : div.innerHTML="LANDSCAPE";
+                break;
+                case -90 : div.innerHTML="LANDSCAPE";
+                break;
+            }
+        });
+        </script>
+</body>
+
+</html>
