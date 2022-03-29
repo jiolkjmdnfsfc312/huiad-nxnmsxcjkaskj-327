@@ -17,62 +17,13 @@
     width: 100%;
     height: 100%;
 }
-
-/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
-@media only screen and (orientation:landscape) {
-  #turn { display:block; }
-  #container { display:none; }
-}
- 
-/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
-@media only screen and (orientation:portrait) {
-  #turn { display:none; }
-  #container { display:block; }
-}
 </style>
 </head>
 
 <body>
-    <!-- (A) THIS WILL SHOW ON THE WRONG ORIENTATION -->
-<div id="turn">
-    Please rotate your device!
-  </div>
-  
-  <!-- (B) CONTENTS AS USUAL -->
-  <div id="container">
-    Main contents here.
-  </div>
-
     <div class="fluidMedia">
         <iframe src="https://html5.gamedistribution.com/0c92b681c7ce4e2cb3711071ac635721/" frameborder="0"> </iframe>
     </div>
-    
-    <script>
-        // (A) LOCK SCREEN ORIENTATION
-function lock (orientation) {
-  // (A1) GO INTO FULL SCREEN FIRST
-  let de = document.documentElement;
-  if (de.requestFullscreen) { de.requestFullscreen(); }
-  else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
-  else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
-  else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
-
-  // (A2) THEN LOCK ORIENTATION
-  screen.orientation.lock(orientation);
-}
-
-// (B) UNLOCK SCREEN ORIENTATION
-function unlock () {
-  // (B1) UNLOCK FIRST
-  screen.orientation.unlock();
-
-  // (B2) THEN EXIT FULL SCREEN
-  if (document.exitFullscreen) { document.exitFullscreen(); }
-  else if (document.webkitExitFullscreen) { document.webkitExitFullscreen(); }
-  else if (document.mozCancelFullScreen) { document.mozCancelFullScreen(); }
-  else if (document.msExitFullscreen) { document.msExitFullscreen(); }
-}
-    </script>
 </body>
 
 </html>
