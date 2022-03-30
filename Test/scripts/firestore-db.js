@@ -70,7 +70,7 @@ async function getuserInfoRealtime(userID){
                         editProfile["profileEmail"].value = userInfo.email
                         editProfile["phoneno"].value = userInfo.phone
                         editProfile["specialty"].value = userInfo.specialty
-
+                        editProfile["prorfolioUrl"].value = userInfo.portfolioUrl
                         editProfile["experience"].value = userInfo.experience
 
                         if(firebase.auth().currentUser.photoURL){
