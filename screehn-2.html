@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #lock {
+            display: none;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+            #lock {
+                display: block;
+            }
+
+            #container {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+            #lock {
+                display: none;
+            }
+
+            #container {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="lock">
+        <h1>Please rotate Your Phone</h1>
+    </div>
+
+    <div id="container">
+        <iframe src="https://html5.gamedistribution.com/cd6ade15b6c244cd836f86872ba5e60b/" width="1334" height="750" scrolling="none" frameborder="0"></iframe>
+    </div>
+</body>
+</html>

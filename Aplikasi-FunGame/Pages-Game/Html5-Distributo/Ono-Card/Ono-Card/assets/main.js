@@ -10,7 +10,7 @@ function getParentUrl() {
     return url;
 }
 // Add the self-hosted game url as value of gameUrl.
-var gameUrl = 'https://html5.gamedistribution.com/1b914f3e43ca4a77899cf481e88664d9/';
+var gameUrl = 'https://html5.gamedistribution.com/cd6ade15b6c244cd836f86872ba5e60b/';
 document
     .getElementById('FunGames')
     .src = gameUrl + '?gd_sdk_referrer_url=' + getParentUrl();
