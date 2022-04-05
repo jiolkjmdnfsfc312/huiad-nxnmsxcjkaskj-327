@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration (ENTER YOUR FIREBASE CONFIGURATION DETAILS)
 var firebaseConfig = {
     apiKey: "AIzaSyCSdoYwAd5IHNPXO1a5OCSiYWpORLUzyPI",
-  authDomain: "fungamesid.firebaseapp.com",
-  databaseURL: "https://fungamesid-default-rtdb.firebaseio.com",
-  projectId: "fungamesid",
-  storageBucket: "fungamesid.appspot.com",
-  messagingSenderId: "288362351127",
-  appId: "1:288362351127:web:1def18b6d7e9695d982a52",
-  measurementId: "G-HGSY5WTSGZ",
+    authDomain: "fungamesid.firebaseapp.com",
+    databaseURL: "https://fungamesid-default-rtdb.firebaseio.com",
+    projectId: "fungamesid",
+    storageBucket: "fungamesid.appspot.com",
+    messagingSenderId: "288362351127",
+    appId: "1:288362351127:web:1def18b6d7e9695d982a52",
+    measurementId: "G-HGSY5WTSGZ",
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
