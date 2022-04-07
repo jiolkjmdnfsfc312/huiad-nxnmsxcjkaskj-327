@@ -1,0 +1,12 @@
+.iframe {
+    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    height:100%;
+    width:130%;
+    position:fixed;
+    top: 0px;
+    left: -49px;
+    right:0px;
+    bottom:0px
+}
