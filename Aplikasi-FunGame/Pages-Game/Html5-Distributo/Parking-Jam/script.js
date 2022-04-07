@@ -13,7 +13,7 @@ const firebaseConfig = {
      const hitCounter = document.getElementById("hit-counter");
      hitCounter.style.display = "none";
      
-     const db = firebase.database().ref("View Game Parking Jam Out");
+     const db = firebase.database().ref("View Game Parking Jam");
      db.on("value", (snapshot) => {
        hitCounter.textContent = snapshot.val();  
      });

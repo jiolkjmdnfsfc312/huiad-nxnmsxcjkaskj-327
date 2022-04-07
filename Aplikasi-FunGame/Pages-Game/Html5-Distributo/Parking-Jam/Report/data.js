@@ -12,7 +12,7 @@ var config = {
 firebase.initializeApp(config);
 
 // Reference messages collection
-var messagesRef = firebase.database().ref('Report Game Parking Jam Out');
+var messagesRef = firebase.database().ref('Report Game Parking Jam');
 
 function reset() {
   document.getElementById("contactForm").reset();

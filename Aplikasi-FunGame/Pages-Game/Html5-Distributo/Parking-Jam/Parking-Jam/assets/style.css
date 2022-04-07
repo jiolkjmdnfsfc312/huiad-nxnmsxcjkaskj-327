@@ -2,12 +2,11 @@
     overflow:hidden;
     overflow-x:hidden;
     overflow-y:hidden;
-    z-index: 1000;
-    height: 100%;
-    width:121.5%;
+    height:100%;
+    width:100%;
     position:fixed;
     top:0px;
-    left:-35px;
+    left:0px;
     right:0px;
     bottom:0px
 }
