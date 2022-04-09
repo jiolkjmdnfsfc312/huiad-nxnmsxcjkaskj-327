@@ -1,12 +1,12 @@
 function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}const config = {
-  apiKey: "AIzaSyCbfIND8mb0ggsHpV4bYtVCn5Qzt58U64o",
-  authDomain: "stack-image.firebaseapp.com",
-  databaseURL: "https://stack-image-default-rtdb.firebaseio.com",
-  projectId: "stack-image",
-  storageBucket: "stack-image.appspot.com",
-  messagingSenderId: "958868122247",
-  appId: "1:958868122247:web:38956a32407616e2faa622",
-  measurementId: "G-QG1DE7N0JD" };
+  apiKey: "AIzaSyDHhIxlXJN5MU5f3aW-X-TfRHYrebUnEEQ",
+  authDomain: "fungames-komen-app.firebaseapp.com",
+  databaseURL: "https://fungames-komen-app-default-rtdb.firebaseio.com",
+  projectId: "fungames-komen-app",
+  storageBucket: "fungames-komen-app.appspot.com",
+  messagingSenderId: "626295007388",
+  appId: "1:626295007388:web:ee59f66b2f9ccd24692559",
+  measurementId: "G-6MWGYJ5YKS" };
   
   firebase.initializeApp(config);
   
