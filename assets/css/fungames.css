@@ -6153,6 +6153,10 @@ img.rounded {
     border-radius: 3px;
 }
 
+.icon-category {
+    width: 50px;
+}
+
 .nk-feature-1 .nk-feature-icon img,
 .nk-feature-2 .nk-feature-icon img {
     max-width: 100%;
