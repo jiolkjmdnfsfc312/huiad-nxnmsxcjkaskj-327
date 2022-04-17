@@ -10,7 +10,7 @@ function createUserCollection(user){
        email:user.email,
        phone:"",
        specialty:"",
-       portfolioUrl:"",
+       Upload:"",
        experience:""
    })
 }
@@ -58,7 +58,7 @@ async function getuserInfoRealtime(userID){
                           <li class="collection-item">phone - ${userInfo.phone}</li>
                           <li class="collection-item">speciality -${userInfo.specialty}</li>
                           <li class="collection-item">Experience -${userInfo.experience}</li>
-                          <li class="collection-item">portfolio - <a href="${userInfo.portfolioUrl}">open</li>
+                          <li class="collection-item">Upload - <a href="${userInfo.Upload}">open</li>
                         </ul>
                       
   
@@ -70,7 +70,7 @@ async function getuserInfoRealtime(userID){
                         editProfile["profileEmail"].value = userInfo.email
                         editProfile["phoneno"].value = userInfo.phone
                         editProfile["specialty"].value = userInfo.specialty
-                        editProfile["prorfolioUrl"].value = userInfo.portfolioUrl
+                        editProfile["Upload"].value = userInfo.Upload
                         editProfile["experience"].value = userInfo.experience
 
                         if(firebase.auth().currentUser.photoURL){
@@ -103,7 +103,7 @@ function updateUserProfile(e){
         email:editProfile["profileEmail"].value,
         phone:editProfile["phoneno"].value,
         specialty:editProfile["specialty"].value,
-        portfolioUrl:editProfile["prorfolioUrl"].value,
+        Upload:editProfile["Upload"].value,
         experience:editProfile["experience"].value
 
     })
@@ -153,7 +153,7 @@ async function allUserDetails(){
             <td>${info.phone}</td>
             <td>${info.specialty}</td>
             <td>${info.experience}</td>
-            <td><a href="${info.portfolioUrl}">view</td>
+            <td><a href="${info.Upload}">view</td>
           </tr>
            `
     })
